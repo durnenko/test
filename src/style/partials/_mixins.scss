@@ -1,0 +1,20 @@
+@mixin group-link {
+    color: #fff;
+    padding: 6px;
+    margin-right: 4px;
+    opacity: 1;
+    background-color: #aeb4bb;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+@mixin button {
+    color: #fff;
+    background-color: $base-color;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    padding: 5px 15px;
+}

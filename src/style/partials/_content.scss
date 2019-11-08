@@ -19,15 +19,12 @@
       }
 
       .group_link{
-          color: #fff;
-          padding: 6px;
-          margin-right: 4px;
-          opacity: 1;
-          background-color: #aeb4bb;
+        @include group-link;
       }
 
       .group_link_close{
           margin-left: 10px;
+          text-decoration: none;
       }
   }
 
@@ -35,7 +32,7 @@
       margin-top: 25px;
 
       .addUser_title{
-          color: #f9a54b;
+          color: $link-color;
           font-size: 1.2em;
       }
 
@@ -44,7 +41,7 @@
           font-size: 1.2em;
 
           .yellow{
-              color: #f9a54b;
+              color: $link-color;
           }
       }
 
@@ -175,15 +172,11 @@
 
   .cardTabs_img{
       width: 60%;
-      img {
-          width: 100%;
-          height: auto;
-      }
   }
 
   .cardTabs_wrapper{
       width: 40%;
-      background-color: #b1cbd9;
+      background-color: $base-color;
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -220,11 +213,6 @@
           width: 70px;
           height: 80px;
           cursor: pointer;
-
-          img{
-              width: 100%;
-              height: auto;
-          }
       }
   }
 
@@ -250,12 +238,7 @@
 
 
   .code_btn {
-      color: #fff;
-      background-color: #b1cbd9;
-      outline: none;
-      border: none;
-      font-size: 1.2em;
-      padding: 5px 15px;
+    @include button;
   }
   
 
