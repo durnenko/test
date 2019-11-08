@@ -1,4 +1,33 @@
 body{
-  font-family: "Fira Sans", sans-serif;
-  color: red;
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.3em;
+  font-size: 13px;
+  background-image: url('../img/bg_body.jpg');
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: 100%;   
 }
+.main{
+  padding-bottom: 80px;
+}
+
+.main_wrapper{
+  display: flex;
+  justify-content: space-between;
+
+  .main_sidebar{
+    width: 30%;
+    padding-right: 30px;
+  }
+  .main_content{
+    width: 70%;
+  }
+}
+
+@import "partials/header";
+@import "partials/sidebar";
+@import "partials/content";
+
+
+
